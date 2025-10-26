@@ -1,33 +1,65 @@
 #include <stdio.h>
-void display(int arr[], int n)
+
+// FUNCTION TO DISPLAY ARRAY ELEMENTS
+void display(int arr[], int size)
 {
-  for (int i = 0; i < n; i++)
+  printf("Array Elements: ");
+  for (int i = 0; i < size; i++)
   {
-    printf("%d ", arr[i]);
+    printf("%d  ", arr[i]);
   }
-  printf("\n");
+  printf("\n----------------------------\n");
 }
-int indexInsetion(int arr[], int size, int element, int capacity, int index)
+
+// FUNCTION TO INSERT AN ELEMENT INTO ARRAY
+int inserter(int arr[], int capacity, int size, int index, int element)
 {
+  // CHECK IF INSERTION POSSIBLE
   if (size >= capacity)
   {
-    printf("ARRAY IS FULL CAN't INSERT");
-    return -1;
+    printf("Insetion is not possible: array is full\n");
+    return 0;
   }
-  for (int i = size - 1; i >= index; i--)
+  else if (index < 0 || index > size)
   {
-    arr[i + 1] = arr[i];
+    printf("Invalid index! Please enter index between 0 and %d.\n", size);
+    return 0;
   }
-  arr[index] = element;
-  return 1;
+  else
+  {
+    // SHIFT ELEMENTS TO THE RIGHT TO MAKE SPACE
+    for (int i = size - 1; i >= index; i--)
+    {
+      arr[i + 1] = arr[i];
+    }
+    // INSERT NEW ELEMENT
+    arr[index] = element;
+    printf("\n--Insertion Completed!--\n");
+    return 1;
+  }
 }
+
 int main()
 {
-  int arr[100] = {1, 2, 3, 4, 5, 6};
-  int size = 224, element = 23, index = 3;
+  printf("Program of Array insertion\n\n");
+  printf("----------------------------");
+
+  // INITIALIZATION OF ARRAY WITH INITIAL VALUES
+  int arr[100] = {1, 2, 3, 4, 5, 6, 7, 8};
+  int index, element, size = 8;
+  int capacity = sizeof(arr) / sizeof(int);
+  printf("\nThe Original Array is : \n");
   display(arr, size);
-  indexInsetion(arr, size, element, 100, index);
-  size += 1;
+  // TAKE USER INPUT
+  printf("\nEnter the element and index to insert (e.g., 99 3)\n");
+  scanf("%d %d", &element, &index);
+
+  // ATTEMPT INSERTION
+  if (inserter(arr, capacity, size, index, element))
+    size += 1; // ONLY INCREASE SIZE IF INSERTION SUCCEEDED
+  printf("----------------------------");
+
+  printf("\nThe Updated Array is : \n");
   display(arr, size);
   return 0;
 }
