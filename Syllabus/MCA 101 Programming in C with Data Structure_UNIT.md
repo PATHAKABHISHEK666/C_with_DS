@@ -21,16 +21,16 @@
 
 ### Unit II – Arrays, Pointers \& File Handling
 
-- [ ] Arrays – defining and processing
-- [ ] Passing arrays to functions
-- [ ] Multi-dimensional arrays
+- [Done] Arrays – defining and processing
+- [Done] Passing arrays to functions
+- [Done] Multi-dimensional arrays
 - [ ] Strings – operations on strings (`strlen`, `strcmp`, etc.)
-- [ ] Pointer expressions \& pointer arithmetic
+- [Done] Pointer expressions \& pointer arithmetic
 - [ ] Arrays of pointers
 - [ ] Functions returning pointers
 - [ ] Pointer to function
-- [ ] Dynamic memory allocation: `malloc()`, `calloc()`, `free()`
-- [ ] Structures in C
+- [Done] Dynamic memory allocation: `malloc()`, `calloc()`, `free()`
+- [Done] Structures in C
 - [ ] Unions in C
 - [ ] File handling (`fopen`, `fclose`, `fscanf`, `fprintf`, etc.)
 
