@@ -1,3 +1,6 @@
+
+/*Write a program to evalute y = x^d where x and y are floating variables and d is an integer*/
+
 #include <stdio.h>
 #include <conio.h>
 

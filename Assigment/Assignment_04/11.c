@@ -1,3 +1,5 @@
+/*Write a c program to input two numbers and display odd numbers between them*/
+
 #include <stdio.h>
 #include <conio.h>
 
