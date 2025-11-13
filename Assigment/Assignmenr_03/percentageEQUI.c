@@ -10,7 +10,6 @@ product of two fractions also display the percentage of the resulting product.
 #include<stdio.h>
 
 void main(){
--
     int a, b, c, d;
        
     int pr_num = a*c;
