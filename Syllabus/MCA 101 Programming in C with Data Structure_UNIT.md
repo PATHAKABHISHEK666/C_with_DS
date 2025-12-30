@@ -24,10 +24,10 @@
 - [Done] Arrays – defining and processing
 - [Done] Passing arrays to functions
 - [Done] Multi-dimensional arrays
-- [ ] Strings – operations on strings (`strlen`, `strcmp`, etc.)
+- [Done] Strings – operations on strings (`strlen`, `strcmp`, etc.)
 - [Done] Pointer expressions \& pointer arithmetic
-- [ ] Arrays of pointers
-- [ ] Functions returning pointers
+- [Done] Arrays of pointers
+- [Done] Functions returning pointers
 - [ ] Pointer to function
 - [Done] Dynamic memory allocation: `malloc()`, `calloc()`, `free()`
 - [Done] Structures in C
